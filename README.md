@@ -19,5 +19,8 @@ There is a notebook available here to showcase work related to the above questio
 There is a csv file containing final dataset that is going to be feed for model training.
 
 ### Results
-In this project I use Random forest classifier to prdict the result. This model gives a training data accuracy of 0.763 and an F1-score of 0.748 and  test data set accuracy of 0.736 and F1-score of 0.716 suggests that the random forest model did not overfit the training data.
+In this project I use Random forest classifier to prdict the result. This model gives a training data accuracy of 0.763 and an F1-score of 0.748 and  test data set accuracy of 
+0.736 and F1-score of 0.716 suggests that the random forest model did not overfit the training data.
+-Blog Post of this project is at medium : [Starbucks Offer Success Prediction](https://medium.com/@imhimanshurajonly/starbucks-offer-success-prediction-451a1d13cb6d)
+
 
