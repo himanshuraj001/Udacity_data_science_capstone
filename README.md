@@ -1,6 +1,6 @@
 # Udacity_data_science_capstone
 ### Introducing a Dataset
-This data set contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
+This data set contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
 
 ### Project Motivation 
 I chose this project to understand the success rate of offers being sent and analysis is done through addressing the following questions.
@@ -18,6 +18,6 @@ There are three datasets provided and each dataset is cleaned and preprocessed f
 There is a notebook available here to showcase work related to the above questions and wrangling process. 
 There is a csv file containing final dataset that is going to be feed for model training.
 
-###Results
+### Results
 In this project I use Random forest classifier to prdict the result. This model gives a training data accuracy of 0.763 and an F1-score of 0.748 and  test data set accuracy of 0.736 and F1-score of 0.716 suggests that the random forest model did not overfit the training data.
 
