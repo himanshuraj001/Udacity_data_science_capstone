@@ -16,7 +16,7 @@ There are three datasets provided and each dataset is cleaned and preprocessed f
 
 
 ### File Descriptions
-There is a notebook available here to showcase work related to the above questions and wrangling process. 
+There is a notebook available here where we work on our motivation and wrangling process. 
 There is a csv file containing final dataset that is going to be feed for model training.
 
 ### Results
