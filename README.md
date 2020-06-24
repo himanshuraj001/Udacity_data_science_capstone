@@ -1,18 +1,19 @@
 # Udacity_data_science_capstone
-### Introducing a Dataset
-This data set contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
 
 ### Project Motivation 
-I chose this project to understand the success rate of offers being sent and analysis is done through addressing the following questions.
-1. How many customers were provided with a specific offer?
-2. What's the performance level of an offer?
+In this project we our motivation is to check whether an offer is sent to be a customer or not we aslo check how much an offer is sucessful or what is the count of offers sent.
+We then made a classifier which feed on our processed data and then tell us wether an offer is sucessful or not.
 
 ### Data Preparation 
-There are three datasets provided and each dataset is cleaned and preprocessed for further analysis. The target features for analysis are offer_success, percent_success.
+There are three datasets provided and each dataset is cleaned and preprocessed for further analysis:
 
-1. Portfolio - renaming id column name to offer_id, one-hot encoding of channels and offer_type columns
-2. Profile - profile: renaming id column name to customer_id, replacing age value 118 to nan, creating readable date format in became_member_on column, dropping rows with no gender, income, age data, converting gender values to numeric 0s and 1s, adding start year and start month columns (for further analysis)
-3. Transcript - renaming person column name to customer_id, creating separate columns for amount and offer_id from value col, dropping transaction rows whose customer_id is not in profile:customer_id, converting time in hours to time in days, segregating offer and transaction data, finally dropping duplicates if any
+- In portfolio file we create dummy for channels column and then merge it with the file and drop that channel .
+
+- In Profile file we remove rows that contain null values and age greater than 100 years , while observing null containing row we came to know that values are null only when age is greater than 100 so after this information we drop all null columns or age greater than 100. We convert became member on column to days old that a user has been member from the latest member in data and in last we create dummies for gender column.
+- In Transcript data we seprate different columns for offer and amount and then drop all customer ids that were not in profile processed data. Then, we convert time in days then seprate transaction and offer data.
+- Offer portfolio, customer profile and transaction data are combined to form a single dataset and train models. In the combined dataset, each row will describe an offer’s attributes, customer demographic data, and whether the offer was successful and through which channels the offer was advertised. An offer is said to be successful only if it is viewed and completed within a given duration.
+
+
 
 ### File Descriptions
 There is a notebook available here to showcase work related to the above questions and wrangling process. 
